@@ -20,7 +20,7 @@ body {
 [class*="col-"] {
     float: left;
 }
-row::after {
+.row::after {
     content: "";
     display: block;
     clear: both;
