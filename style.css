@@ -65,6 +65,9 @@ body {
 .col-6 {
     width: 50%;
 }
+.col-8 {
+    width: 66,667%;
+}
 .col-9 {
     width: 75%;
 }
