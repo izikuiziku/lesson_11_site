@@ -43,6 +43,9 @@ body {
 .menu li:last-child {
     border-right: 1px #2c71b8 solid;
 }
+.sub-menu li{
+    float: none;
+}
 .menu a {
     display: block;
     height: 50px;
@@ -52,7 +55,7 @@ body {
     color: #2c71b8;
     font-size: 21px;
 }
-.menu a:hover {
+.menu li:hover a{
     background-color: #2c71b8;
     color: white;
 }
@@ -66,7 +69,7 @@ body {
     width: 50%;
 }
 .col-8 {
-    width: 66,667%;
+    width: 66.66667%;
 }
 .col-9 {
     width: 75%;
@@ -78,37 +81,38 @@ body {
     height: 50px;
     position: relative;
 }
+.chevron-down-icon {
+    width: 8px;
+    height: 6px;
+    background-image: url(image/white-arrow-png.png);
+    position: absolute;
+    left: 120px;
+    bottom: 22px;
+    /* z-index:4; */
+}
 .sub-menu {
-    height: 315px;
-    display: none;
+    padding: 20px 0px;
+    background-color: #2c71b8;
     position: absolute;
     left: -1px;
+    display: none;
 }
 .product-menu:hover .sub-menu {
     display: block;
 }
 .sub-menu a {
-    width: 286px;
+    width: 284px;
     height: 40px;
     display: block;
     height: 40px;
     text-decoration: none;
     text-align: left;
-    text-indent: 32px;
+    text-indent: 30px;
     line-height: 40px;
-    background-color: #2c71b8;
     color: white;
     font-size: 21px;
 }
-.sub-menu a:first-child {
-    height: 58px;
-    line-height: 68px;
-}
-.sub-menu a:last-child {
-    height: 58px;
-    line-height: 40px;
-}
-.sub-menu a:hover {
+.sub-menu li a:hover {
     color: #2c71b8;
     background: white;
 }
@@ -124,7 +128,6 @@ body {
 }
 ::placeholder {
     color: #2c71b8;
-    text-indent: 15px;
 }
 input[type="search"] { 
     display: inline-block;
@@ -133,7 +136,10 @@ input[type="search"] {
     font-size: 21px;
     background: transparent;
     border: none;
-    width: 160px;
+    width: 198px;
+    height: 38px;
+    border-color: none;
+    padding-left: 15px;
 }
 .button {
     width: 30px;
@@ -150,15 +156,17 @@ input[type="search"] {
 }
 .cart {
     padding-top: 5px;
+    padding-left: 5px;
     height: 50px;
     position: relative;
 }
-.cart-button {
+div .cart-button {
     width: 40px;
     height: 40px;
     background: #ffffff;
     line-height: 50px;
     text-align: center;
+    margin-right: 0px;
 }
 .cart-count {
     height: 20px;
@@ -168,7 +176,7 @@ input[type="search"] {
     color: #ffffff;
     font-size: 14px;
     position: absolute;
-    left: -10px;
+    left: -5px;
     bottom: 35px;
     text-align: center;
     line-height: 20px;
@@ -194,54 +202,51 @@ input[type="search"] {
     color: #8ab0d8;
     text-decoration: none;
 }
-.title, .sort {
+.title-products, .sort {
     padding-top: 20px;
     padding-bottom: 50px;
 }
-.sort-menu a {    
+.sort-menu-li {
+    font-size: 21px;
     font-weight: lighter;
-    font-family: 'Roboto';
-    font-size: 21;
+    line-height: 40px;
+}
+.sort-menu-li>a {
+    border: 1px solid;
+    border-color: #ffffff;
 }
 .sort a {
     display: block;
     width: 270px;
     height: 40px;
     text-align: left;
-    text-indent: 20px;
-    line-height: 40px;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
-    border-right: 1px solid; 
-    border-color: #ffffff;
+    text-indent: 15px;
     text-decoration: none;
     color: #ffffff;
     background-color: #2c71b8;
 }
-.sort a:first-child {
-    border-top: 1px solid;
-}
-.sort-menu:hover {
-    background-color: #2c71b8;
-    color: white;
+.sort-menu-li a:hover {
+    background-color: #ffffff;
+    color: #2c71b8;
 }
 .title-sort {
     position: relative
-}
-.sort {
-    position:absolute;
-    left: 614px;
-    top: 0px;
 }
 .sort-menu-block {
     display: none;
     position:absolute;
     z-index:4;
 }
-.sort-menu:hover .sort-menu-block {
+.sort-menu-block a {
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #ffffff;
+}
+.sort-menu-li:hover .sort-menu-block {
     display: block;
 }
-.title p {
+.title-products p {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 48px;
@@ -259,62 +264,40 @@ input[type="search"] {
     position: relative;
 }
 .photo-1 {
-    background-image: url(image/photo-1.png);
-    height: 89px;
-    width: 103px;    
     position: absolute;
-    left: 84px;
     top: 45px;
+    left: 84px;
 }
 .tv-remote{
-    background-image: url(image/tv-remote.png);
-    height: 84px;
-    width: 103px;
     position: absolute;
     left: 84px;
     top: 45px;
 }
 .watch-icon {
-    background-image: url(image/watch-icon.png);
-    height: 102px;
-    width: 57px;
     position: absolute;
     left: 105px;
-    top: 45px;
+    top: 35px;
 }
 .laptop-icon {
-    background-image: url(image/laptop-icon.png);
-    height: 62px;
-    width: 103px;
     position: absolute;
     left: 84px;
     top: 60px;
 }
 .mp3-icon {
-    background-image: url(image/mp3-icon.png);
-    height: 102px;
-    width: 61px;
     position: absolute;
     left: 104px;
     top: 40px;
 }
 .phone-icon {
-    background-image: url(image/phone-icon.png);
-    height: 102px;
-    width: 54px;
     position: absolute;
     left: 104px;
     top: 40px;
 } 
 .ipad-icon {
-    background-image: url(image/ipad-icon.png);
-    height: 102px;
-    width: 69px;
     position: absolute;
     left: 104px;
     top: 40px;
 }
-
 .square, .heart {
     width: 30px;
     height: 30px;
@@ -326,14 +309,9 @@ input[type="search"] {
 .square:hover {
      background-color: #2c71b8;
 }
-.square:hover>.square-icon {
-    background-image: url(image/square-icon-white.png);
-}
+
 .heart:hover {
      background-color: #2c71b8;
-}
-.heart:hover>.heart-icon {
-    background-image: url(image/heart-icon-white.png);
 }
 .square {
     position: absolute;
@@ -357,7 +335,9 @@ input[type="search"] {
     left: 4px;
     top: 4px;
 }
-
+.square:hover>.square-icon {
+    background-image: url(image/square-icon-white.png);
+}
 .heart-icon {
     background-image: url(image/heart-icon.png);
     background-size: cover;
@@ -368,6 +348,9 @@ input[type="search"] {
     position: absolute;
     left: 5px;
     top: 6px;
+}
+.heart:hover>.heart-icon {
+    background-image: url(image/heart-icon-white.png);
 }
 .product-info {
     height: 470px;
@@ -410,21 +393,26 @@ input[type="search"] {
     right: 25px; */
 }
 
-form button {
+div button {
     height: 50px;
     width: 210px;
     border: none;
     background-color: transparent;
     color: white;
+    border: 1px solid white;
 }
 div .more-details>button {
     margin-bottom: 15px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .add-to-cart button {
-    background-color: rgba(255, 255, 255, 0.15);
+    /* background-color: rgba(255, 255, 255, 0.15); */
     text-align: left;
     text-indent: 15px;
+}
+div button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
 }
 .add-to-cart {
     position: relative;
@@ -438,20 +426,3 @@ div .more-details>button {
     left: 178px;
     top: 15px;
 }
-
-
-
-
-
-
-/* width: 286px;
-height: 40px;
-display: block;
-height: 40px;
-text-decoration: none;
-text-align: left;
-text-indent: 32px;
-line-height: 40px;
-background-color: #2c71b8;
-color: white;
-font-size: 21px; */

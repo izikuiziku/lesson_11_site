@@ -1,8 +1,63 @@
 {
 	"folders": [
 		{
-			"path": "../.."
+			"name": "draft",
+			"path": "../../draft"
+		},
+		{
+			"name": "lesson 3.1",
+			"path": "../../lesson 3.1"
+		},
+		{
+			"name": "lesson 2",
+			"path": "../../lesson 2"
+		},
+		{
+			"name": "lesson 5",
+			"path": "../../lesson 5"
+		},
+		{
+			"name": "lesson 1",
+			"path": "../../lesson 1"
+		},
+		{
+			"name": "lesson 5.1",
+			"path": "../../lesson 5.1"
+		},
+		{
+			"name": "lesson 4",
+			"path": "../../lesson 4"
+		},
+		{
+			"name": "lesson 7",
+			"path": "../../lesson 7"
+		},
+		{
+			"name": "lesson 6.1",
+			"path": "../../lesson 6.1"
+		},
+		{
+			"name": "lesson 6",
+			"path": "../../lesson 6"
+		},
+		{
+			"name": "lesson 3",
+			"path": "../../lesson 3"
+		},
+		{
+			"name": "lesson 7.1",
+			"path": "../../lesson 7.1"
+		},
+		{
+			"name": "lesson 8.1",
+			"path": "../../lesson 8.1"
+		},
+		{
+			"name": "lesson 9",
+			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }
